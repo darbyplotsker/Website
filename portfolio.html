@@ -8,45 +8,75 @@
         </script>
         <title>Darby Plotsker</title>
     <style>
-
-    body {font-family: "Lato", sans-serif}
-
-        html {
+        body {
+    font-family: "Lato", sans-serif;
+}
+    html {
     height:100%;
-    }
-        ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(1, 111, 255);
-    }
+    }   
 
-li {
-    float: left;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(9, 5, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
 }
 
-li a:hover {
-    background-color: rgb(0, 0, 0);
+.sidenav a:hover {
+    color: #000000;
 }
 
-        </style>   
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    </style>
   </head>
   <body>
-    <ul>
-        <li><a class="active" href="#Home">Home</a></li>
-        <li><a href="#About Me" class="w3-bar-item w3-button w3-padding-large">About Me</a></li>
-        <li><a href="#My Family" class="w3-bar-item w3-button w3-padding-large">My Family</a></li>
-        <li><a href="#Contact Information" class="w3-bar-item w3-button w3-padding-large">Contact Information</a></li>
-    </ul>
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="portfolio.html">Home</a>
+                <a href="About_Me.html">About Me</a>
+                <a href="Friends_and_fam.html">Friends and Family</a>
+                <a href="#">My Projects</a>
+                <a href="#">How To Reach Me</a>
+        </div>
+              
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+              
+              <script>
+              function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+              }
+              
+              function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+              }
+              </script>
+   
     <h1 style="font-family:courier;">
             <font size="7">All About Me</font>
     </h1>
@@ -55,37 +85,8 @@ li a:hover {
         <img id="darbyImage" src="darby.jpg">
     </div>
     
-    <h2 style="font-family:courier;"><font size="6"> Darby Alexa Plotsker</font></h2>
-    <h3 style="font-family:courier;"><font size="5">About Me: </font></h3>
-    <p> 
-        I am 16 years old. 
-        I will be going into 12th grade this coming fall, and I am looking forward to applying to colleges. 
-        My favorite color is blue. 
-        I live at home with my parents, my brother, and my 2 sisters. 
-        I am able to create this website do to participating in a girls who code internship over the summer. 
-        When I'm not studying for the ACT or school, you can find me listening to music, watching Marvel movies or sleeping.
-     </p> 
-     <p>
-         Likes: I love superheros, especially Iron Man and Spiderman. 
-         Right now I am counting down until the next instalation of Infinity Wars comes out. 
-         I also love the movie trilogy “How to Train Your Dragon” and cannot wait for the last movie to come out in March of next year. 
-         Dislikes: I really don't like Captain America in the Marvel movies. 
-         I am a firm TeamIronMan fan. 
-         Hobbies: I really like sports, especially Volleyball. 
-         I also love swimming when I can. 
-         Fun Fact: I went on a plane for the first time when I was 12
-    </p>  
-    
-      <p>  
-        Favorite Websites:
-        Youtube.com: I like listening to music and watching videos
-        netflix.com: Netflix is amazing. I watch a lot of Netflix. 
-        ao3.org I love the stories that people post that I am able to read
+    <h2 style="font-family:courier;"><font size="6"> Darby Alexa Plotsker </font></h2>
 
-    </p>
-    
-  
+
 </body>
 </html>
-
-

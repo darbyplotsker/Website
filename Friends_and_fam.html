@@ -4,8 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>About Me</title>
 
-    <style>
-            
+    <style> 
         html {
             height:100%;
             }   
@@ -48,15 +47,69 @@
           .sidenav {padding-top: 15px;}
           .sidenav a {font-size: 18px;}
         }
+            
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}    
+        
         </style>
+        </head>
         <body>
                 <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a href="portfolio.html">Home</a>
                         <a href="About_Me.html">About Me</a>
                         <a href="Friends_and_fam.html">Friends and Family</a>
-                        <a href="#">My Projects</a>
-                        <a href="#">How To Reach Me</a>
+                        <a href="contact_me.html">Contact Me</a>
                 </div>
                       
                       <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
@@ -70,8 +123,53 @@
                           document.getElementById("mySidenav").style.width = "0";
                       }
                       </script>
+
+                <!-- Header -->
+<div class="header">
+    
+      </div>
+        <h3 style="font-family:courier;"><font size="5">Friends and Family: </font></h3>
+      <!-- Photo Grid -->
+      <div class="row"> 
+        <div class="column">
+          <img src="fam pics/fam2.jpg" style="width:100%">
+          <img src="fam pics/fam6.jpg" style="width:100%">
+          <img src="friend pics/friends6.jpg" style="width:100%">
+          <img src="friend pics/friends13.jpg" style="width:100%">
+          <img src="friend pics/friends22.jpg" style="width:100%">
+          <img src="friend pics/friends3.jpg" style="width:100%">
+          <img src="fam pics/fam14.jpg" style="width:100%">
+          <img src="fam pics/fam11.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="friend pics/friends18.jpg" style="width:100%">
+          <img src="fam pics/fam16.jpg" style="width:100%">
+          <img src="friend pics/friends9.jpg" style="width:300px;height:350px;">
+          <img src="friend pics/friends5.jpg" style="width:100%">
+          <img src="fam pics/fam9.jpg" style="width:100%">
+          <img src="fam pics/fam4.jpg" style="width:100%">
+          <img src="friend pics/friends15.jpg" style="width:100%">
+        </div>  
+        <div class="column">
+          <img src="friend pics/friends.jpg" style="width:100%">
+          <img src="fam pics/fam1.jpg" style="width:100%">
+          <img src="friend pics/friends1.jpg" style="width:100%">
+          <img src="fam pics/fam10.jpg" style="width:100%">
+          <img src="friend pics/friends19.jpg" style="width:100%">
+          
+          <img src="friend pics/friends11.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="fam pics/fam12.jpg" style="width:100%">
+          <img src="friend pics/friends12.jpg" style="width:100%">
+          <img src="fam pics/fam13.jpg" style="width:100%">
+          <img src="friend pics/friends14.jpg" style="width:100%">
+          <img src="fam pics/fam15.jpg" style="width:100%">
+          
+        </div>
+      </div>
         
-            <h3 style="font-family:courier;"><font size="5">Friends and Family: </font></h3>
+            
 
                 
         </body>
